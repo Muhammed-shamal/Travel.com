@@ -34,18 +34,10 @@ const Footer = () => {
                   alt="Logo"
                   className="dark:hidden"
                 />
-                <Image
-                  width={70}
-                  height={20}
-                  src="/abc-none-bg.png"
-                  alt="Logo"
-                  className="hidden dark:block"
-                />
               </a>
 
               <p className="mt-5 text-sm lg:text-base">
-                '𝗖𝗵𝗼𝗼𝘀𝗲 𝘆𝗼𝘂𝗿 𝗰𝗵𝗼𝗶𝗰𝗲' 𝗔𝗻𝘆 𝘁𝘆𝗽𝗲𝘀 𝘂𝘀𝗲𝗱𝗰𝗮𝗿𝘀 𝗮𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗳𝗿𝗼𝗺 𝘂𝘀 𝗔𝗹𝗹
-                𝗸𝗲𝗿𝗮𝗹𝗮 𝘂𝘀𝗲𝗱 𝗰𝗮𝗿𝘀
+                '𝗖𝗵𝗼𝗼𝘀𝗲 𝘆𝗼𝘂𝗿 𝗰𝗵𝗼𝗶𝗰𝗲' ...
               </p>
             </motion.div>
 
@@ -70,10 +62,10 @@ const Footer = () => {
                 Contact
               </p>
               <a
-                href="mailto:abccars@gmail.com"
+                href="mailto:travel@gmail.com"
                 className="text-sm font-medium text-black dark:text-white lg:text-base"
               >
-                abccars@gmail.com
+                travel@gmail.com
               </a>
             </motion.div>
           </div>
