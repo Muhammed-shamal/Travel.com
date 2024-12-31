@@ -45,7 +45,7 @@ const BottomNavigation = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="fixed bottom-0 left-0 right-0 bg-stroke dark:bg-blackho border-t border-gray-200 dark:border-tertiary shadow-lg flex justify-around items-center py-2 md:hidden"
+      className="fixed bottom-0 left-0 right-0 bg-white dark:bg-blackho border-t border-gray-200 dark:border-tertiary shadow-lg flex justify-around items-center py-2 md:hidden"
     >
       {/* Navigation buttons */}
       {navigationButtons.map(({ path, icon, label }) => (
