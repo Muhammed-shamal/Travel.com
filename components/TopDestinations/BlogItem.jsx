@@ -25,18 +25,19 @@ const BlogItem = ({ blog }) => {
         whileInView="visible"
         transition={{ duration: 1, delay: 0.5 }}
         viewport={{ once: true }}
-        className="animate_top bg-white p-4 pb-9 rounded-xl shadow-lg"
+        className="animate_top bg-white p-4 pb-9 rounded-md shadow-md"
       >
         <Link href={`/blog/`} className="relative block aspect-[368/239]">
-          <Image src={mainImage} alt={title} fill/>
+          <Image src={mainImage} alt={title} className="object-cover" fill />
         </Link>
 
         <div className="px-4">
-          <h3 className="mb-3.5 mt-7.5 line-clamp-2 inline-block text-lg font-medium text-primary xl:text-itemtitle2">
+          <h3 className="mb-3.5 mt-10 line-clamp-2 inline-block text-lg font-medium text-primary xl:text-itemtitle2">
             <Link href={`/blog/blog-details`}>
               {`${title.slice(0, 40)}...`}
             </Link>
           </h3>
+           
           <p className="line-clamp-3">{metadata}</p>
         </div>
       </motion.div>

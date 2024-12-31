@@ -35,6 +35,7 @@ module.exports = {
         
         white: "#FFFFFF",
         black: "#000000",
+        dark:"#05073c",
       },
       
       screens: {
