@@ -12,7 +12,7 @@ const Features = () => {
             Features
           </span>
           <h2 className="text-4xl text-center font-bold text-gray-900 py-5">
-            Revolutionary Features
+          Why choose Tourz
           </h2>
           <p className="text-lg font-normal text-gray-500 max-w-md md:max-w-2xl mx-auto">
             Provides advanced features like time tracking, integrating with third
