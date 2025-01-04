@@ -4,8 +4,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 
 import { motion } from "framer-motion";
-import { FaHome, FaInfoCircle, FaCar } from "react-icons/fa";
-import { MdContactPage } from "react-icons/md";
+import { FaHome, FaInfoCircle } from "react-icons/fa";
+import { MdContactPage,MdTravelExplore } from "react-icons/md";
 
 const BottomNavigation = () => {
   const pathname = usePathname();
@@ -36,7 +36,7 @@ const BottomNavigation = () => {
   const navigationButtons = [
     { path: "/", icon: <FaHome size={24} />, label: "Home" },
     { path: "/about", icon: <FaInfoCircle size={21} />, label: "About Us" },
-    { path: "/destinations", icon: <FaCar size={21} />, label: "Destinations" },
+    { path: "/destinations", icon: <MdTravelExplore size={21} />, label: "Destinations" },
     { path: "/contact", icon: <MdContactPage size={21} />, label: "Contact" }
   ];
 

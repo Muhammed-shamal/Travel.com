@@ -28,12 +28,12 @@ const Navbar = () => {
     <header
       className={`fixed left-0 top-0 z-99999 w-full py-6 ${
         stickyMenu
-          ? "bg-white !py-5 shadow transition duration-10"
+          ? "bg-white !py-5 shadow-sm transition duration-10"
           : ""
       }`}
     >
-      <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
-        <div className="flex w-full items-center justify-between xl:w-1/4">
+      <div className="relative mx-auto max-w-c-1390 items-center px-4 md:px-8 xl:flex 2xl:px-0">
+        <div className="flex w-full items-center  xl:w-1/4 font-semibold text-2xl">
           <a href="/">
             Travel Kannur
           </a>
@@ -41,7 +41,7 @@ const Navbar = () => {
 
         {/* Nav Menu Start   */}
         <div
-          className={`invisible h-0 w-full items-center justify-between xl:visible xl:flex xl:h-auto xl:w-full`}
+          className={`invisible h-0 w-full items-center xl:visible xl:flex xl:h-auto xl:w-full`}
         >
           <nav>
             <ul className="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-10">
