@@ -5,7 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 
 import { motion } from "framer-motion";
 import { FaHome, FaInfoCircle } from "react-icons/fa";
-import { MdContactPage,MdTravelExplore } from "react-icons/md";
+import { MdContactPage, MdTravelExplore } from "react-icons/md";
 
 const BottomNavigation = () => {
   const pathname = usePathname();
@@ -54,7 +54,8 @@ const BottomNavigation = () => {
           whileHover={{ scale: 1.1, rotate: [0, 10, -10, 0] }}
           whileTap={{ scale: 0.9 }}
           onClick={() => router.push(path)}
-          className="flex flex-col items-center transition-transform duration-300 text-primary border-black"
+          className={`flex flex-col items-center transition-transform duration-300 ${pathname === path ? 'text-primary border-b-2 border-primary' : 'text-secondary border-secondary'
+            }`}
         >
           {icon}
           <span className="text-xs mt-1">{label}</span>
