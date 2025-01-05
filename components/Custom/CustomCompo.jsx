@@ -8,7 +8,7 @@ export default function CustomComponent() {
       <div className="max-container padding-container relative w-full flex justify-end">
         <div className="flex flex-1 lg:min-h-[900px]">
           <Image
-            src="/icons/phone.png"
+            src="/mobile/app2.png"
             alt="phone"
             width={440}
             height={1000}

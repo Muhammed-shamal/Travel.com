@@ -5,41 +5,12 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <>
-      <footer className="border-t-2 border-primary">
+      <footer className="border-t-2 border-gray-600">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
-          {/* <!-- Footer Top --> */}
-          <div className="mt-6 flex flex-wrap justify-between gap-6 lg:gap-0">
-            <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 1, delay: 0.5 }}
-              viewport={{ once: true }}
-              className="w-full text-center sm:w-1/2 lg:w-1/4 lg:text-left"
-            >
-              <a href="/" className="relative inline-block">
-                <Image
-                  width={70}
-                  height={20}
-                  src="/abc-none-bg.png"
-                  alt="Logo"
-                  className="dark:hidden"
-                />
-              </a>
+          {/* <div className="mt-6 flex flex-wrap justify-between gap-6 lg:gap-0"> </div> */}
 
-              <p className="mt-5 text-sm lg:text-base">
-                '𝗖𝗵𝗼𝗼𝘀𝗲 𝘆𝗼𝘂𝗿 𝗰𝗵𝗼𝗶𝗰𝗲' ...
-              </p>
-            </motion.div>
+          {/* <!-- Footer Bottom --> */}
+          <div className="flex flex-col flex-wrap items-center justify-center gap-5 border-t border-stroke py-7 dark:border-strokedark lg:flex-row lg:justify-between lg:gap-0">
 
             <motion.div
               variants={{
@@ -63,53 +34,12 @@ const Footer = () => {
               </p>
               <a
                 href="mailto:travel@gmail.com"
-                className="text-sm font-medium text-black dark:text-white lg:text-base"
+                className="text-sm font-medium text-gray-800 lg:text-base"
               >
                 travel@gmail.com
               </a>
             </motion.div>
-          </div>
 
-          {/* <!-- Footer Top --> */}
-
-          {/* <!-- Footer Bottom --> */}
-          <div className="flex flex-col flex-wrap items-center justify-center gap-5 border-t border-stroke py-7 dark:border-strokedark lg:flex-row lg:justify-between lg:gap-0">
-            <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="animate_top"
-            >
-              <ul className="flex items-center gap-8">
-                <li>
-                  <a href="#" className="hover:text-primary">
-                    English
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary">
-                    Support
-                  </a>
-                </li>
-              </ul>
-            </motion.div>
 
             <motion.div
               variants={{
@@ -160,7 +90,7 @@ const Footer = () => {
                     aria-label="social icon"
                   >
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="fill-[#6f7377] transition-all duration-300 hover:fill-primary"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -188,7 +118,7 @@ const Footer = () => {
                     aria-label="social icon"
                   >
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="fill-[#6f7377] transition-all duration-300 hover:fill-primary"
                       width="24"
                       height="24"
                       xmlns="http://www.w3.org/2000/svg"
@@ -202,7 +132,7 @@ const Footer = () => {
                 <li>
                   <a href="#" aria-label="social icon">
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="fill-[#6f7377] transition-all duration-300 hover:fill-primary"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
@@ -226,7 +156,7 @@ const Footer = () => {
                 <li>
                   <a href="#" aria-label="social icon">
                     <svg
-                      className="fill-[#D1D8E0] transition-all duration-300 hover:fill-primary"
+                      className="fill-[#6f7377] transition-all duration-300 hover:fill-primary"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
