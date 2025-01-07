@@ -66,7 +66,7 @@ const Navbar = () => {
 
                   <ul className={`dropdown ${dropdownToggler ? "flex" : ""}`}>
                     {menuItem.submenu.map((item, key) => (
-                      <li key={key} className="hover:text-primary">
+                      <li key={key} className="hover:text-secondary">
                         <Link href={item.path || "#"}>{item.title}</Link>
                       </li>
                     ))}
@@ -77,7 +77,7 @@ const Navbar = () => {
                   href={`${menuItem.path}`}
                   className={
                     pathUrl === menuItem.path
-                      ? "text-primary hover:text-primary"
+                      ? "text-primary border-b-2 border-secondary"
                       : "hover:text-primary"
                   }
                 >

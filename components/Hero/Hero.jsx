@@ -96,54 +96,54 @@ export default function Hero() {
 
     return (
         <section className="bg-[url('https://lh5.googleusercontent.com/p/AF1QipM2pX0c_H2Krx-lVz6EyWu58fx2IeNxvZ6kYRiI=w675-h390-n-k-no')] bg-center bg-cover">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center p-36">
-                    <h1 className="max-w-2xl mx-auto font-manrope font-bold text-4xl text-gray-900 mb-5 md:text-5xl leading-[50px]">
-                        Control your Finances with our
-                        <span className="text-indigo-600"> Smart Tool </span>
-                    </h1>
-                    <p className="max-w-sm mx-auto text-base font-normal leading-7 text-gray-950 mb-9">
-                        Invest intelligently and discover a better way to manage your entire wealth easily.
-                    </p>
-                    <a
-                        href="#"
-                        className="mb-14 inline-flex items-center justify-center py-3 px-7 text-base font-semibold text-white rounded-full bg-indigo-600 shadow-xs hover:bg-indigo-700 transition-all duration-500"
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center p-36">
+                <h1 className="max-w-2xl mx-auto font-manrope font-bold text-4xl text-gray-900 mb-5 md:text-5xl leading-[50px]">
+                    Control your Finances with our
+                    <span className="text-indigo-600"> Smart Tool </span>
+                </h1>
+                <p className="max-w-sm mx-auto text-base font-normal leading-7 text-gray-950 mb-9">
+                    Invest intelligently and discover a better way to manage your entire wealth easily.
+                </p>
+                <a
+                    href="#"
+                    className="mb-14 inline-flex items-center justify-center py-3 px-7 text-base font-semibold text-white rounded-full bg-indigo-600 shadow-xs hover:bg-indigo-700 transition-all duration-500"
+                >
+                    View More
+                    <svg
+                        className="ml-2"
+                        width={20}
+                        height={20}
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                     >
-                        View More
-                        <svg
-                            className="ml-2"
-                            width={20}
-                            height={20}
-                            viewBox="0 0 20 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M7.5 15L11.0858 11.4142C11.7525 10.7475 12.0858 10.4142 12.0858 10C12.0858 9.58579 11.7525 9.25245 11.0858 8.58579L7.5 5"
-                                stroke="white"
-                                strokeWidth={2}
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            />
-                        </svg>
-                    </a>
-                    <div className="flex justify-center">
-                        <Swiper
-                            autoplay={{ delay: 3000, disableOnInteraction: false }}
+                        <path
+                            d="M7.5 15L11.0858 11.4142C11.7525 10.7475 12.0858 10.4142 12.0858 10C12.0858 9.58579 11.7525 9.25245 11.0858 8.58579L7.5 5"
+                            stroke="white"
+                            strokeWidth={2}
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                        />
+                    </svg>
+                </a>
+                <div className="flex justify-center">
+                    <Swiper
+                        autoplay={{ delay: 3000, disableOnInteraction: false }}
 
-                            className="w-full max-w-4xl"
-                        >
-                            {images.map((src, idx) => (
-                                <SwiperSlide key={idx}>
-                                    <img
-                                        src={src}
-                                        alt={`Slide ${idx + 1}`}
-                                        className="rounded-t-3xl w-full h-auto object-cover"
-                                    />
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-                    </div>
+                        className="w-full max-w-4xl"
+                    >
+                        {images.map((src, idx) => (
+                            <SwiperSlide key={idx}>
+                                <img
+                                    src={src}
+                                    alt={`Slide ${idx + 1}`}
+                                    className="rounded-t-3xl w-full h-auto object-cover"
+                                />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
-            </section>
+            </div>
+        </section>
     );
 }

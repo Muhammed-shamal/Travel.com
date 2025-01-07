@@ -2,10 +2,8 @@ import { contacts } from "@/constant/contact";
 import React from "react";
 
 const Contact = () => {
-    
-
     return (
-        <div className="pt-36 pb-20">
+        <div className="sm:pt-36 pt-10 pb-20">
             <section className="py-12">
                 <div className="container mx-auto px-4 md:px-8">
                     <div className="flex flex-col md:flex-row md:space-x-16">
@@ -27,7 +25,7 @@ const Contact = () => {
                                     <h3 className="text-lg font-semibold text-gray-800">
                                         {contact.title}
                                     </h3>
-                                    <p className="mt-2 text-blue-500">
+                                    <p className="mt-2 text-primary">
                                         <a href={`mailto:${contact.email}`}>{contact.email}</a>
                                     </p>
                                     <p className="mt-1 text-gray-600">{contact.phone}</p>
