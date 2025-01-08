@@ -1,7 +1,7 @@
 
 export default function NotFound() {
   return (
-    <section className="">
+    <section>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="w-full flex-col justify-start items-center lg:gap-16 gap-10 inline-flex lg:pt-[180px] pt-12 lg:pb-28 pb-12">
           <div className="border border-indigo-300 h-[550px] rounded-lg w-full">
