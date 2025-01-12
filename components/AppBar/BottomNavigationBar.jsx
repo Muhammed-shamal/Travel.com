@@ -5,7 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 
 import { motion } from "framer-motion";
 import { FaHome, FaInfoCircle } from "react-icons/fa";
-import { MdContactPage, MdTravelExplore } from "react-icons/md";
+import { MdContactPage, MdTravelExplore, MdWhatsapp } from "react-icons/md";
 
 const BottomNavigation = () => {
   const pathname = usePathname();
@@ -37,7 +37,13 @@ const BottomNavigation = () => {
     { path: "/", icon: <FaHome size={24} />, label: "Home" },
     { path: "/about", icon: <FaInfoCircle size={21} />, label: "About Us" },
     { path: "/blog", icon: <MdTravelExplore size={21} />, label: "Destinations" },
-    { path: "/contact", icon: <MdContactPage size={21} />, label: "Contact" }
+    { path: "/contact", icon: <MdContactPage size={21} />, label: "Contact" },
+    {
+      path: "https://wa.me/+918304912033",
+      icon: <MdWhatsapp size={21} />,
+      label: "WhatsApp",
+      isExternal: true, // Indicate external link
+    },
   ];
 
   return (
@@ -48,13 +54,17 @@ const BottomNavigation = () => {
       className="z-50 fixed bottom-0 left-0 right-0 bg-white dark:bg-blackho border-t border-gray-200 dark:border-tertiary shadow-lg flex justify-around items-center py-2 md:hidden"
     >
       {/* Navigation buttons */}
-      {navigationButtons.map(({ path, icon, label }) => (
+      {navigationButtons.map(({ path, icon, label, isExternal }) => (
         <motion.button
           key={path}
           whileHover={{ scale: 1.1, rotate: [0, 10, -10, 0] }}
           whileTap={{ scale: 0.9 }}
-          onClick={() => router.push(path)}
-          className={`flex flex-col items-center transition-transform duration-300 ${pathname === path ? 'text-primary border-b-2 border-primary' : 'text-secondary border-secondary'
+          onClick={() =>
+            isExternal ? window.open(path, "_blank") : router.push(path)
+          }
+          className={`flex flex-col items-center transition-transform duration-300 ${pathname === path && !isExternal
+              ? "text-primary border-b-2 border-primary"
+              : "text-secondary border-secondary"
             }`}
         >
           {icon}
