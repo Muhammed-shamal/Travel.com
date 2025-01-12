@@ -7,6 +7,7 @@ import CustomComponent from "@/components/Custom/CustomCompo";
 import Features from "@/components/Features/Features";
 import TopDestinations from "@/components/TopDestinations/TopDestinations";
 import FAQSection from "@/components/Faqs/Faqs";
+import TrustedCustomerUI from "@/components/TrustedCustomerCompo/TrustedCustomerCompo";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);  // Loading state
@@ -32,6 +33,7 @@ export default function Home() {
           <Features />
           <CustomComponent />
           <TopDestinations />
+          <TrustedCustomerUI />
           <FAQSection />
         </Fragment>
       )}

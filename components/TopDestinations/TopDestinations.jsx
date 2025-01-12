@@ -28,9 +28,6 @@ export default function TopDestinations() {
             <BlogItem blog={blog} key={key} />
           ))}
     
-          {BlogData.slice(4, 8).map((blog, key) => (
-            <BlogItem blog={blog} key={key} />
-          ))}
         </div>
       </div>
     </section>    
