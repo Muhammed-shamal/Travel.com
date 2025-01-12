@@ -1,6 +1,6 @@
 import React from "react";
-import BlogData from "./blogData";
-import BlogItem from "./BlogItem";
+import TopBlogData from "./blogData";
+import TopBlogItem from "./BlogItem";
 import RightSvg from "./rightArrow";
 
 
@@ -24,8 +24,8 @@ export default function TopDestinations() {
     
       <div className="mx-auto mt-10 max-w-c-1280 px-4 md:px-8 xl:mt-15 xl:px-0">
         <div className="grid grid-cols-1 gap-7.5 md:grid-cols-2 lg:grid-cols-4 xl:gap-10">
-          {BlogData.slice(0, 4).map((blog, key) => (
-            <BlogItem blog={blog} key={key} />
+          {TopBlogData.slice(0, 4).map((blog, key) => (
+            <TopBlogItem blog={blog} key={key} />
           ))}
     
         </div>

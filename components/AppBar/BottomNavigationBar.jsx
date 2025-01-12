@@ -36,7 +36,7 @@ const BottomNavigation = () => {
   const navigationButtons = [
     { path: "/", icon: <FaHome size={24} />, label: "Home" },
     { path: "/about", icon: <FaInfoCircle size={21} />, label: "About Us" },
-    { path: "/destinations", icon: <MdTravelExplore size={21} />, label: "Destinations" },
+    { path: "/blog", icon: <MdTravelExplore size={21} />, label: "Destinations" },
     { path: "/contact", icon: <MdContactPage size={21} />, label: "Contact" }
   ];
 
