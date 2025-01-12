@@ -33,7 +33,7 @@ export default function Home() {
           <Features />
           <CustomComponent />
           <TopDestinations />
-          <TrustedCustomerUI />
+          {/* <TrustedCustomerUI /> */}
           <FAQSection />
         </Fragment>
       )}

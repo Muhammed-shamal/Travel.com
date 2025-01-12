@@ -15,28 +15,28 @@ const TopBlogData= [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
   },
   {
-    _id: 2,
+    _id: 3,
     mainImage: "/blog/blog3.webp",
     title: "Tips to quickly improve your coding speed.",
     metadata:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
   },
   {
-    _id: 1,
+    _id: 4,
     mainImage: "/window.svg",
     title: "Free advertising for your online business",
     metadata:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
   },
   {
-    _id: 2,
+    _id: 5,
     mainImage: "/vercel.svg",
     title: "9 simple ways to improve your design skills",
     metadata:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit convallis tortor.",
   },
   {
-    _id: 2,
+    _id: 6,
     mainImage: "/icons/android.svg",
     title: "Tips to quickly improve your coding speed.",
     metadata:
