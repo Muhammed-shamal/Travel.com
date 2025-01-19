@@ -9,6 +9,7 @@ import TopDestinations from "@/components/TopDestinations/TopDestinations";
 import FAQSection from "@/components/Faqs/Faqs";
 import Description from "@/components/Description/Description";
 import Packages from "@/components/Packages/Packages";
+import OurServices from "@/components/Services/Services";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);  // Loading state
@@ -46,6 +47,7 @@ export default function Home() {
           <Description />
           <Features />
           <CustomComponent />
+          {/* <OurServices /> */}
           <TopDestinations />
           <Packages />
           {/* <TrustedCustomerUI /> */}

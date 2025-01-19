@@ -168,3 +168,59 @@ body {
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   background: #4f46e5 !important;
 }
+
+
+/*service compo styles*/
+.container-xxl {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.service-item {
+  background: #ffffff;
+  padding: 20px;
+  transition: 0.3s;
+  border: 1px solid #e6e6e6;
+  text-decoration: none;
+  display: block;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.service-icon .fa {
+  font-size: 1.5rem;
+}
+
+.text-primary {
+  color: #007bff !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.wow {
+  opacity: 1;
+  animation-duration: 1.2s;
+}
