@@ -33,14 +33,14 @@ const Navbar = () => {
   <div className="relative mx-auto max-w-c-1390 items-center px-4 md:px-8 xl:flex 2xl:px-0">
     {/* Logo/Brand */}
     <div
-      className={`flex w-full items-center justify-center font-semibold text-2xl xl:justify-start xl:w-1/4`}
+      className={`flex w-full items-center justify-center font-semibold text-2xl lg:justify-start xl:w-1/4`}
     >
       <a href="/" className="pt-2 sm:pt-0">Travel Kannur</a>
     </div>
 
     {/* Nav Menu */}
     <div
-      className={`invisible h-0 w-full mt-4 xl:mt-0 items-center xl:visible flex xl:w-3/4 xl:justify-center`}
+      className={`invisible h-0 w-full mt-4 xl:mt-0 items-center xl:visible flex xl:w-3/4 md:justify-center`}
     >
       <nav>
         <ul className="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-10 xl:justify-center">

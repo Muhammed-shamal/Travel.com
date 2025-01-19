@@ -63,8 +63,8 @@ const BottomNavigation = () => {
             isExternal ? window.open(path, "_blank") : router.push(path)
           }
           className={`flex flex-col items-center transition-transform duration-300 ${pathname === path && !isExternal
-              ? "text-primary border-b-2 border-primary"
-              : "text-secondary border-secondary"
+            ? "text-primary border-b-2 border-primary"
+            : "text-secondary border-secondary"
             }`}
         >
           {icon}

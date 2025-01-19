@@ -36,7 +36,7 @@ export default function TopDestinations() {
               <a href="javascript:;" className="cursor-pointer border border-gray-300 shadow-sm rounded-full py-3.5 px-7 w-52 lg:mx-0 mx-auto flex justify-center text-gray-900 font-semibold transition-all duration-300 hover:bg-gray-100">View All</a>
             </div>
 
-            <div className="flex items-center lg:justify-start justify-center lg:mt-0 mt-8 gap-8 mb-4">
+            <div className="flex items-center justify-center lg:mt-0 mt-8 gap-8 mb-4">
               <button
                 onClick={prevPage}
                 disabled={currentPage === 1}
